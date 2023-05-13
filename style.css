@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+main .left {
+  grid-column: 1 / span 6;
+  grid-row: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+main .left .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 16px;
+}
+main .left h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+main .left label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+main .left .check {
+  display: inline-block;
+}
+main .left input {
+  width: 90%;
+  height: 45px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 15px;
+  border-color: #0000006d;
+}
+
+main .left label {
+  display: block;
+}
+main .right {
+  grid-column: 7 / span 13;
+  grid-row: auto;
+  background-color: #591edf;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  flex-direction: column;
+}
+main .right img {
+  width: 500px;
+}
+main .left .check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+main .left .check input {
+  width: 20px;
+  margin: 0;
+}
+main .left .check label {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+main .left .check label a {
+  color: #4d13d1;
+}
+main .left .btn a {
+  color: #fff;
+  background-color: #591edf;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  width: 90%;
+}
+main .left .sign-in {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+main .left .sign-in a {
+  color: #591edf;
+  text-decoration: none;
+  color: #591edf;
+}
+main .left .sign-in a:hover {
+  text-decoration: underline;
+}
+main .right h2 {
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+main .right p {
+  color: #ffffff76;
+  text-align: center;
+}
