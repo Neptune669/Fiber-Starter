@@ -147,3 +147,29 @@ main .right p {
     font-size: 14px;
   }
 }
+@media (max-width: 850px) {
+  main .right {
+    display: none;
+  }
+  main .left {
+    grid-column-start: 2;
+    grid-column-end: 13;
+  }
+  main .left input {
+    width: 85%;
+  }
+  main .left .btn a {
+    width: 85%;
+  }
+  main .left .sign-in p {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+  }
+  main .left .check {
+    width: 85%;
+  }
+  main .left .check label {
+    font-size: 14px;
+  }
+}
