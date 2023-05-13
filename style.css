@@ -120,3 +120,30 @@ main .right p {
   color: #ffffff76;
   text-align: center;
 }
+/* responsive */
+@media (max-width: 768px) {
+  main .right {
+    display: none;
+  }
+  main .left {
+    grid-column-start: 2;
+    grid-column-end: 13;
+  }
+  main .left input {
+    width: 75%;
+  }
+  main .left .btn a {
+    width: 75%;
+  }
+  main .left .sign-in p {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+  }
+  main .left .check {
+    width: 75%;
+  }
+  main .left .check label {
+    font-size: 14px;
+  }
+}
