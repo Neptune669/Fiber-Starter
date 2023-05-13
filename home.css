@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap");
+:root {
+  --primary-color: #591edf;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: #fbf8f3;
+}
+header nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header nav .links ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav .links ul li {
+  margin-left: 20px;
+  color: #000000c6;
+}
+header nav .links ul li:hover {
+  color: var(--primary-color);
+}
+header nav .sign a {
+  text-decoration: none;
+}
+
+header nav .sign :nth-child(1) {
+  color: #000000c6;
+  margin-right: 10px;
+}
+header nav .sign :nth-child(2) {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+section.landing {
+  padding: 80px 0;
+  background-color: #fbf8f3;
+}
+section .container {
+  display: flex;
+  justify-content: space-between;
+}
+section .container .right img {
+  width: 400px;
+}
