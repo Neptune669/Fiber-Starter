@@ -130,18 +130,18 @@ main .right p {
     grid-column-end: 13;
   }
   main .left input {
-    width: 75%;
+    width: 85%;
   }
   main .left .btn a {
-    width: 75%;
+    width: 85%;
   }
   main .left .sign-in p {
     display: flex;
-    width: 75%;
+    width: 85%;
     justify-content: center;
   }
   main .left .check {
-    width: 75%;
+    width: 85%;
   }
   main .left .check label {
     font-size: 14px;
