@@ -40,6 +40,7 @@ header nav .links ul li {
 }
 header nav .links ul li:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 header nav .sign a {
   text-decoration: none;
@@ -47,7 +48,8 @@ header nav .sign a {
 
 header nav .sign :nth-child(1) {
   color: #000000c6;
-  margin-right: 10px;
+  margin-right: 15px;
+  font-weight: 600;
 }
 header nav .sign :nth-child(2) {
   color: #fff;
@@ -62,7 +64,58 @@ section.landing {
 section .container {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
+}
+section .container .right {
+  display: flex;
+  justify-content: start;
 }
 section .container .right img {
-  width: 400px;
+  width: 550px;
+}
+section .container .left {
+  justify-content: center;
+}
+.landing .container .left span {
+  color: gold;
+  font-size: 1.25rem;
+}
+
+.landing .container .left h1 {
+  color: #0d0d0d;
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 533px;
+  margin: 15px 0;
+}
+.landing .container .left p {
+  color: #000000b5;
+  font-size: 16px;
+  max-width: 500px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.landing .container .left .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.landing .container .left .ex {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.landing .container .left .check {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+}
+.landing .container .left .check i {
+  color: #43b29e;
 }
