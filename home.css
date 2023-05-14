@@ -23,6 +23,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav .menu {
+  display: none;
+}
 header nav .logo a {
   color: #000000;
   text-decoration: none;
@@ -239,4 +242,79 @@ section .container .left {
   border-radius: 4px;
   border: 2px solid #00000040;
   padding: 10px 0;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  header nav .menu {
+    display: block;
+  }
+  header nav .links,
+  .sign {
+    display: none;
+  }
+  section.landing {
+    padding: 0;
+  }
+  section.landing .container {
+    flex-direction: column-reverse;
+  }
+  section .container .right img {
+    width: 365px;
+    margin-bottom: 35px;
+  }
+  .landing .container .left p {
+    margin-bottom: 35px;
+  }
+  .landing .container .left .check {
+    flex-direction: column;
+    gap: 0;
+  }
+  .landing .container .left .check :nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .landing .container .left .ex {
+    display: block;
+    margin-top: 37px;
+    text-align: center;
+  }
+  .landing .container .left .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing .container .left .btns .btn {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .features .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .features .flex-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 35px; */
+  }
+  .features .flex-container .left h4 {
+    padding-top: 30px;
+    font-size: 37px;
+  }
+  .features .flex-container .right {
+    margin: 50px 50px 0;
+    padding-top: 40px;
+  }
+  .features .flex-container .right img {
+    width: 300px;
+    height: 400px;
+  }
+  .features .cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
